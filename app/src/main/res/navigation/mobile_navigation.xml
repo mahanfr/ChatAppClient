@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="ir.mahanfr.chatapp.ui.fragments.DashboardFragment"
+        android:name="ir.mahanfr.chatapp.ui.fragments.ContactsFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_contacts" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="ir.mahanfr.chatapp.ui.fragments.NotificationsFragment"
+        android:name="ir.mahanfr.chatapp.ui.fragments.SettingsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_settings" />
 </navigation>
