@@ -25,6 +25,7 @@ class MessageRecyclerviewAdapter(private val dataSet: ArrayList<Chat>) :Recycler
         // Get element from your dataSet at this position and replace the
         // contents of the view with that element
         //TODO:Change this to profile name of a chat
+        holder.itemView.tag = position
         holder.profileUsernameTextView.text = "Mahan"
     }
 

@@ -1,5 +1,6 @@
 package ir.mahanfr.chatapp.ui.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Debug
 import android.util.Log
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView
 import ir.mahanfr.chatapp.R
 import ir.mahanfr.chatapp.adapters.MessageRecyclerviewAdapter
 import ir.mahanfr.chatapp.data.models.Chat
+import ir.mahanfr.chatapp.ui.activities.MessagingActivity
 import ir.mahanfr.chatapp.ui.viewModels.HomeViewModel
 
 class HomeFragment : Fragment() {
@@ -30,6 +32,7 @@ class HomeFragment : Fragment() {
             ViewModelProvider(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
 
+        //TODO: Change Dummy For The Real one
         val dummyDataList:ArrayList<Chat> = ArrayList()
         dummyDataList.add(Chat(1, emptyList(), listOf("mahan","admin")))
         dummyDataList.add(Chat(2, emptyList(), listOf("mahan","admin")))
